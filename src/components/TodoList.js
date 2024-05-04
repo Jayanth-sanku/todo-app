@@ -1,13 +1,13 @@
-import { format } from 'date-fns';
-import React, { useEffect, useState } from 'react';
-import { MdDelete, MdEdit } from 'react-icons/md';
-import { useDispatch } from 'react-redux';
-import { toast } from 'react-hot-toast';
-import { deleteTodo, updateTodo } from '../slices/TodoSlice';
-import styles from '../styles/modules/todoItem.module.scss';
-import { getClasses } from '../utils/getClasses';
-import TodoModal from './TodoModal';
-import CheckButton from './CheckButton';
+import { format } from "date-fns";
+import React, { useEffect, useState } from "react";
+import { MdDelete, MdEdit } from "react-icons/md";
+import { useDispatch } from "react-redux";
+import { toast } from "react-hot-toast";
+import { deleteTodo, updateTodo } from "../slices/TodoSlice";
+import styles from "../styles/modules/todoItem.module.scss";
+import { getClasses } from "../utils/getClasses";
+import TodoModal from "./TodoModal";
+import CheckButton from "./CheckButton";
 
 // import { deleteTodo } from '../slices/TodoSlice';
 
@@ -17,11 +17,11 @@ function TodoList({ todo }) {
   const [checked, setChecked] = useState(false);
   const handleDelete = (id) => {
     dispatch(deleteTodo(id));
-    toast.success('Task Deleted Successfully');
+    toast.success("Task Deleted Successfully");
     // console.log('deleting', id, todo);
   };
   useEffect(() => {
-    if (todo.status === 'complete') {
+    if (todo.status === "complete") {
       setChecked(true);
     } else {
       setChecked(false);
@@ -31,7 +31,7 @@ function TodoList({ todo }) {
   const handleCheck = () => {
     setChecked(!checked);
     dispatch(
-      updateTodo({ ...todo, status: checked ? 'incomplete' : 'complete' })
+      updateTodo({ ...todo, status: checked ? "incomplete" : "complete" })
     );
   };
   const handleEdit = () => {
@@ -46,13 +46,13 @@ function TodoList({ todo }) {
             <p
               className={getClasses([
                 styles.todoText,
-                todo.status === 'complete' && styles.todoTextCompleted,
+                todo.status === "complete" && styles.todoTextCompleted,
               ])}
             >
               {todo.title}
             </p>
             <p className={styles.time}>
-              {format(new Date(todo.time), 'p,MM/dd/yyyy')}
+              {format(new Date(todo.time), "p,MM/dd/yyyy")}
             </p>
           </div>
         </div>
@@ -63,6 +63,7 @@ function TodoList({ todo }) {
             onKeyDown={() => handleDelete()}
             role="button"
             tabIndex="0"
+            aria-label="Delete todo"
           >
             <MdDelete />
           </div>
@@ -72,6 +73,7 @@ function TodoList({ todo }) {
             onKeyDown={() => handleEdit()}
             role="button"
             tabIndex="0"
+            aria-label="Edit todo"
           >
             <MdEdit />
           </div>
