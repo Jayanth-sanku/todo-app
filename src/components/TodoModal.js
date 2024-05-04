@@ -54,6 +54,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
       setModalOpen(false);
     }
   };
+
   return (
     <div>
       {modalOpen && (
@@ -72,27 +73,23 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               <h1 className={styles.formTitle}>
                 {type === 'update' ? 'Update Task' : 'Add Task'}
               </h1>
-              <label htmlFor="title">
-                Title
-                <input
-                  type="text"
-                  id="title"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                />
-              </label>
-              <label htmlFor="status">
-                Status
-                <select
-                  name="status"
-                  id="status"
-                  value={status}
-                  onChange={(e) => setStatus(e.target.value)}
-                >
-                  <option value="incomplete">Incomplete</option>
-                  <option value="complete">Complete</option>
-                </select>
-              </label>
+              <label htmlFor="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              />
+              <label htmlFor="status">Status</label>
+              <select
+                name="status"
+                id="status"
+                value={status}
+                onChange={(e) => setStatus(e.target.value)}
+              >
+                <option value="incomplete">Incomplete</option>
+                <option value="complete">Complete</option>
+              </select>
               <div className={styles.buttonContainer}>
                 <Button type="submit" variant="primary">
                   {type === 'update' ? 'Update Task' : 'Add Task'}
