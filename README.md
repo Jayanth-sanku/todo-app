@@ -1,44 +1,38 @@
-![React Todo App](<./Screenshot%20(207).png>)
+# Task Manager Application
 
-**live demo: [https://willowy-lolly-67084f.netlify.app/](https://willowy-lolly-67084f.netlify.app/)**
+## Introduction
 
-# React Todo App.
+Welcome to the Task Manager Application! This application is designed to help you organize your tasks efficiently. Whether you're a student, professional, or anyone looking to stay organized, this app has got you covered.
 
-A complete todo application with all features.
-You can add Todos.
-Mark Complete Todods.
-Delete Todo.
-Edit Todo.
+# Live Demo
 
-# Add New Todo.
+Check out the live demo of the application here.
 
-![Add a New Todo](<./Screenshot%20(206).png>)
+# Features
 
-# Mark Complete Todo.
+Add Todos: Easily add new tasks to your list.
+Mark as Complete: Mark tasks as complete once you've finished them.
+Delete Todos: Remove tasks that are no longer needed.
+Edit Todos: Update task details as needed.
+Local Storage: Your tasks are saved locally, so you can access them even after closing the browser.
+Redux State Management: Efficiently manage application state with Redux, ensuring smooth and predictable behavior.
+Project Description
+In this project, we have developed a comprehensive Task Manager Application with all the necessary features. Using React.js for building dynamic user interfaces and Redux for efficient state management, we ensure a smooth user experience. Additionally, we've incorporated simple animations using Framer Motion to enhance visual appeal.
 
-![Mark Completre](<./Screenshot%20(208).png>)
+# What You'll Learn/Use
 
-# Categorization.
+React.js for building dynamic user interfaces
+Redux for efficient state management
+Redux Toolkit for streamlined Redux usage
+React icons for adding visual elements
+React Hot Toast for interactive notifications
+SCSS for styling customization
+Local Storage for persisting tasks locally
+And more!
 
-![Mark Completre](<./Screenshot%20(209).png>)
+# Requirements
 
----
+To make the most of this project, you'll need:
 
-## Project Description
-
-In the project, we will be creating a Complete Todo Application with all features. We will do all the CRUD operations. We are using `React.js` to manage our states, `Redux`. Also we will learn to make simple animations using `Framer Motion`. This will be a complete `beginner` friendly app. Hope you enjoy it.
-
-## What we are going to learn/use
-
-- [React](https://reactjs.org/)
-- [React Redux](https://redux.js.org/)
-- [React Redux Toolkit](https://redux-toolkit.js.org/)
-- [React icons](https://react-icons.netlify.com/)
-- [React Hot Toast](https://react-hot-toast.com/)
-- [SCSS](https://sass-lang.com/)
-- More...
-
-## Requirements
-
-- Basic ReactJs knowledge
-- Basic HTML, CSS knowledge
+Basic knowledge of ReactJs
+Familiarity with HTML and CSS
