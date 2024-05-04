@@ -61,6 +61,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
         <div className={styles.wrapper}>
           <div className={styles.container}>
             <div
+              aria-label = "some"
               className={styles.closeButton}
               role="button"
               tabIndex="0"
