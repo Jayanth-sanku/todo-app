@@ -27,12 +27,12 @@ function AppHeader() {
           onClick={() => setModalOpen(true)}
           onKeyDown={() => setModalOpen(true)}
         >
-          ADD TODO
+          ADD TODO Task
         </Button>
         <SelectButton value={filterStatus} onChange={(e) => updateFilter(e)}>
-          <option value="all">All</option>
-          <option value="complete">Complete</option>
-          <option value="incomplete">Incomplete</option>
+          <option value="all">All Tasks</option>
+          <option value="complete">Completed Tasks</option>
+          <option value="incomplete">Incomplete Tasks</option>
         </SelectButton>
       </div>
       <TodoModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
