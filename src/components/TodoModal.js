@@ -115,4 +115,3 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
 }
 
 export default TodoModal;
-

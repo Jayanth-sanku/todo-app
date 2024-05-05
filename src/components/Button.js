@@ -1,7 +1,6 @@
 import styles from '../styles/modules/button.module.scss';
 import { getClasses } from '../utils/getClasses';
 
-
 export const Button = ({ children, variant, type, ...res }) => (
   <button
     type={type === 'submit' ? 'submit' : 'button'}
