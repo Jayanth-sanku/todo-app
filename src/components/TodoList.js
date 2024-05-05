@@ -17,7 +17,6 @@ function TodoList({ todo }) {
   const handleDelete = (id) => {
     dispatch(deleteTodo(id));
     toast.success('Task Deleted Successfully');
-    // console.log('deleting', id, todo);
   };
 
   useEffect(() => {

@@ -1,10 +1,6 @@
 import styles from '../styles/modules/button.module.scss';
 import { getClasses } from '../utils/getClasses';
 
-// const buttonTypes = {
-//   primary: 'primmary',
-//   secondary: 'secondary',
-// };
 
 export const Button = ({ children, variant, type, ...res }) => (
   <button
